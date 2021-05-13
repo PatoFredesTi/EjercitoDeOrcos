@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!--linkeo fontawesome --> 
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Sauron Ejercito</title>
+  </head>
+  <body>
+    <header class="bg-dark bg-gradient text-warning text-center container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="/img/Anillo.png" class="img-fluid" width="25%"  alt="AnilloUnico">
+            </div>
+            <div class="col col-md col-lg pt-5">
+                <h1>Control de Tropas</h3>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid pt-3 pb-3">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card bg-dark">
+                    <div class="card-header text-light text-center bg-dark bg-gradient">
+                        <span class="h3">Ingresar Guerrero</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-light" for="nombre-txt">Nombre</label>
+                            <input class="form-control bg-danger text-light" type="text" id="nombre-txt">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light" for="Raza-select">Raza</label>
+                            <select class="form-select bg-danger text-warning" id="Raza-select">
+                                <option value="Orco">Orco</option>
+                                <option value="Uruk">Uruk</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light" for="nivel-int">Nivel</label>
+                            <input class="form-control text-light bg-danger" min="1" type="number" id="nivel-int">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light" for="Rango-select"></label>
+                            <select class="form-select bg-danger text-warning" id="Rango-select">
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Capitan">Capitan</option>
+                                <option value="Caudillo">Caudillo</option>
+                                <option value="ManodeSauron">Mano de Sauron</option>
+                            </select>
+                    </div>
+                    <div class="card-footer-row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-info bg-warning bg-gradient text-danger" id="registrar-btn">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md col-lg">
+            <div class="card">
+                <div class="card-header text-center bg-dark bg-gradient text-light">
+                    <span class="h4" >Mostrar Tropas</span>
+                </div>
+                <div class="card-body bg-dark">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Raza</th>
+                                <th>Rango</th>
+                                <th>Vinculo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
